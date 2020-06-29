@@ -1,5 +1,5 @@
 {% set name = "StitchM" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 {% set import_name = "stitch_m" %}
 package:
   name: {{ name | lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 50e85384368abd870f6fa3c9d61a5f884a93e305ee14243a14f57f34032f9155
+  sha256: 8c5750d30ddbe923e3fcc8b8fe002192505584b241a75f15b05b2a013622313c
 
 build:
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - {{ name }} = {{ import_name }}.scripts.commandline:main
