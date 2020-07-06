@@ -5,7 +5,7 @@ Home: https://github.com/DiamondLightSource/StitchM
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Stitches mosaic images from Cockpit (Micron)
 
