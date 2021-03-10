@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: ef0d187a28e25f5fadf936c911f96431d98c143ad636721dbdc2774d4e9b6297
+  sha256: 5b8e07dd981b2d30c47bad7606781f7a3ca7444b4abc7bb53ee04ea49e3df7f0
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - {{ name }} = {{ import_name }}.scripts.commandline:main
-  skip: true  # [py<35]
+  skip: true  # [py<36]
 
 requirements:
   host:
