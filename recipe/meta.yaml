@@ -1,5 +1,5 @@
 {% set name = "StitchM" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set import_name = "stitch_m" %}
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 5b8e07dd981b2d30c47bad7606781f7a3ca7444b4abc7bb53ee04ea49e3df7f0
+  sha256: c58264deb226d872b073b6c90e1fd304f21b3f07fff72a45fee9a336d29c92f2
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - numpy >=1.17.4
     - tifffile >=2020.9.30
     - mrcfile >=1.1.2
-    - omexml-dls >=1.0.3
+    - omexml-dls >=1.1.0
     - pywin32  # [win]
 
 test:
