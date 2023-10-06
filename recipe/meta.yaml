@@ -10,7 +10,7 @@ source:
   sha256: b5cc1b773de165c109b3eb079640448700ba91dbc6031775f579563d4caf403f
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - {{ name }} = {{ import_name }}.scripts.commandline:main
