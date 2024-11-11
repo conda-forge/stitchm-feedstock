@@ -1,5 +1,5 @@
 {% set name = "StitchM" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 {% set import_name = "stitch_m" %}
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DiamondLightSource/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 43bc67d21bbe247e83b0c66cc5d1dfe21abc105370d2978e3a47f3fa3a9d0fa6
+  sha256: 3ffd0d10a26bf33875f1fd3e3b42ac3acc57da87b0076b45797a74fdfa95a51d
 
 build:
   number: 0
